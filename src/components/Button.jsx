@@ -15,6 +15,19 @@ export const Container = styled.button`
   justify-content: center;
   border: 2px solid black;
   outline: none;
+  border-radius: 6px;
+  padding: 0.25rem 1.5rem;
+  cursor: pointer;
+  background-color: rgb(255, 171, 76);
+  left: -2px;
+  top: -2px;
+  box-shadow: 2px 2px black;
+  z-index: 100;
+  transition: all 0.1s ease-in-out;
+  :hover {
+    transform: translateY(2px);
+    box-shadow: 0 0 0;
+  }
 `
 
 export default Button
