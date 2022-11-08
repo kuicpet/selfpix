@@ -1,27 +1,18 @@
 import React from 'react'
-import styled from 'styled-components/macro'
 import { Link } from 'react-router-dom'
+import styled from 'styled-components/macro'
 import Button from './Button'
 
-const Home = () => {
+const ImageUpload = () => {
   return (
     <Container>
-      <Wrapper>
-        <Link to='/selfie'>Take Selfie</Link>
-        <Link to='/upload'>Upload Photo</Link>
-      </Wrapper>
+      <Link to='/'>Go back</Link>
+      <Button text='Uplaod Photo' />
     </Container>
   )
 }
 
 export const Container = styled.div`
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
- 
-`
-export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,7 +20,6 @@ export const Wrapper = styled.div`
   border: 2px solid black;
   height: 25rem;
   border-radius: 8px;
-
   a {
     text-decoration: none;
     color: black;
@@ -37,7 +27,7 @@ export const Wrapper = styled.div`
     border: 2px solid black;
     padding: 0.125rem 0.5rem;
     border-radius: 8px;
-    background-color: rgb(255, 171, 76);
+    background-color: #caff04;
     cursor: pointer;
     left: -2px;
     top: -2px;
@@ -45,10 +35,9 @@ export const Wrapper = styled.div`
     box-shadow: 2px 2px black;
     transition: 0.1s ease-in-out;
     &:hover {
-     
       transform: translateY(2px);
       box-shadow: 0 0 0;
     }
   }
 `
-export default Home
+export default ImageUpload
