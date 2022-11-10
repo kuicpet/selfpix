@@ -50,5 +50,8 @@ export const Wrapper = styled.div`
       box-shadow: 0 0 0;
     }
   }
+  @media screen and (max-width: 400px) {
+    width: 90% ;
+  }
 `
 export default Home

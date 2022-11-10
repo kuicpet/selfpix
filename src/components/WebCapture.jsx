@@ -99,6 +99,9 @@ export const Container = styled.div`
     border: 2px solid black;
     border-radius: 6px;
   }
+  @media screen and (max-width: 400px) {
+    width: 90% ;
+  }
 `
 export const Wrapper = styled.div`
   //border: 2px solid red ;

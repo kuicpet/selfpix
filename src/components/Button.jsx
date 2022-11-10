@@ -1,10 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Button = ({ text, handleClick }) => {
+const Button = ({ text, handleClick, children }) => {
   return (
     <Container type='button' onClick={handleClick}>
       {text}
+      {children}
     </Container>
   )
 }
@@ -17,6 +18,7 @@ export const Container = styled.button`
   outline: none;
   border-radius: 6px;
   padding: 0.25rem 1.5rem;
+  margin: 1rem ;
   cursor: pointer;
   background-color: rgb(255, 171, 76);
   left: -2px;
